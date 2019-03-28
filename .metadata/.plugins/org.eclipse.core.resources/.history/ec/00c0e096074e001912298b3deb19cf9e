@@ -1,0 +1,37 @@
+package Selenium_Assignment;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Scenario3 
+{
+	static {
+		
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+	}
+
+public static void main(String[] args) throws Exception 
+{
+	//Open browser
+	WebDriver driver= new ChromeDriver();
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	driver.manage().window().maximize();
+	//Enter URL(bluestone)
+	driver.get("https://www.bluestone.com/");
+	//move to Gold coins
+	Actions act= new Actions(driver);
+	WebElement Gcoins = driver.findElement(By.xpath("//li[@id='goldCoins']"));
+	Thread.sleep(1000);
+	act.moveToElement(Gcoins).perform();
+	
+	//Go to Lakshmi gold coins and Select 2 Gm
+	//Verify 2Gm Coin is displaying or not.
+	//close Browser
+}
+
+}

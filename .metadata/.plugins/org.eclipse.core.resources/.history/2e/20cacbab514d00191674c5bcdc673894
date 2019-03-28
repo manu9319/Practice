@@ -1,0 +1,31 @@
+package Java_Assignment2;
+
+import java.util.Scanner;
+
+public class ReverseAStringByPreservingTheSpaces
+{
+	public static void main(String[] args) 
+	{
+		Scanner s = new Scanner (System.in);
+		System.out.println("Enter a string  : ");
+		String str = s.nextLine();
+		char[] c= str.toCharArray();
+		String word="";
+		String res="";
+		Scanner s1 = new Scanner (str);
+		while (s1.hasNext())
+		{
+			String str2=s1.next();
+			for (int i =  c.length; i>0; i--)
+			{
+				if (c[i]<=str2.length()&&c[i]!=' ')
+				{
+					word=word+c[i];
+				}
+			}
+			res=res+" "+word;
+		}
+		System.out.println("Result = "+res);
+	}
+
+}

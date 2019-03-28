@@ -1,0 +1,29 @@
+class Ate extends Tester
+{
+	private String tool ; 
+
+	String getTool()
+	{
+		return tool ; 
+	}
+	String setTool( String tool )
+	{
+		this.tool = tool ; 
+	}
+
+	Ate()
+	{
+	}
+
+	Ate ( String name , double salary , String tool  )
+	{
+		Super( name , salary ) ; 
+		this.tool = tool ; 
+	}
+	void script()
+		{
+		System.out.println(name +" is working on" + tool) ; 
+
+		}
+	}
+

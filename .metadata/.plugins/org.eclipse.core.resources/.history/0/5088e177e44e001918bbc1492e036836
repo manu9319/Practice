@@ -1,0 +1,33 @@
+package Assignment2;
+
+public class Student
+{
+	int std_id,yop;
+	long  phone_no;
+	String std_name;
+	String Email_id,Std_Address,Degree;
+	
+      public Student(int std_id,String std_name,long phone_no)
+      {
+    	  this.std_id=std_id;
+    	  this.std_name=std_name;
+    	  this.phone_no=phone_no;
+    	  
+      }
+      
+
+      public Student(int Std_id,String std_name,String Email_id)
+      {
+    	  this.std_id=std_id;
+    	  this.std_name=std_name;
+    	  this.Email_id=Email_id;
+    	  
+      }
+      
+      public void getAttributes()
+      {
+    	  System.out.println("student_id = "+std_id);
+    	  System.out.println("std_name = "+std_name);
+    	  System.out.println("student_id = "+phone_no);
+     }
+}

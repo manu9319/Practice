@@ -1,0 +1,18 @@
+class Developer extends Emp 
+{
+	private String designation = " Developer "; 
+
+	String getDesignation()
+	{
+		return Designation ; 
+	}
+
+	Developer()
+	{
+	}
+
+	Developer ( String name , double Salary , String Designation ,  )
+	{
+		Super(name , salary) ; 
+	}
+}

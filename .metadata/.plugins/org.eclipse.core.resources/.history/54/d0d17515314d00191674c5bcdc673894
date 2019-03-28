@@ -1,0 +1,10 @@
+package Java_Assignment2;
+
+public class PallindromeString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

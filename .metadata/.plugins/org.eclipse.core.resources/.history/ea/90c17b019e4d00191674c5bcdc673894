@@ -1,0 +1,30 @@
+class Coder extends Developer
+{
+	private String language ; 
+
+	String getLanguage()
+	{
+		return language ;
+	}
+
+	String setLanguage ( String language )
+	{
+		this.language = language ;
+	}
+
+	Coder()
+	{
+	}
+
+	Coder( String name , double salary , String language )
+	{
+		Super( name , salary , designation ) ; 
+		this.language = language ; 
+	}
+
+	void coder()
+	{
+		System.out.println(" Developer writes code ") ; 
+	}
+
+}

@@ -1,0 +1,21 @@
+package OopsConcept;
+abstract class Tester extends Emp
+{
+	private String Designation = " Tester "; 
+
+	String getDesignation()
+	{
+		return Designation ; 
+	}
+	
+
+	Tester()
+	{
+	}
+
+	Tester ( String name , double salary  )
+	{
+		super(name , salary) ; 
+	}
+	
+}

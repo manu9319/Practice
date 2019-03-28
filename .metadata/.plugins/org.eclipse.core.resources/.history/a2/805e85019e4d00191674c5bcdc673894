@@ -1,0 +1,24 @@
+class Company 
+{
+	void display(Coder x, Ate z  )
+	{
+		System.out.println("eID:" +x.getEid()) ; 
+		System.out.println("name:" +x.name) ; 
+		System.out.println("salary:" +x.getSalary()) ; 
+		System.out.println("language :" +x.getLanguage()) ; 
+		x.coder() ; 
+		System.out.println ("---------------------------------") ; 
+		System.out.println("eID:" +z.getEid) ; 
+		System.out.println("name:" +z.name) ; 
+		System.out.println("salary:" +z.getSalary()) ; 
+		System.out.println("salary:" +z.getTool()) ; 
+		z.script() ; 
+	}
+	public static void main(String[] args) 
+	{
+	 
+	 Coder c = new Coder() ;
+	 Ate a = new Ate() ; 
+	 display(c,a) ; 
+	}
+}

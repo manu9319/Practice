@@ -1,0 +1,39 @@
+package Selenium_Assignment;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Scenario1
+{
+	static {
+		
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+	}
+
+public static void main(String[] args) throws Exception 
+{
+	//Open browser
+	WebDriver driver= new ChromeDriver();
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	driver.manage().window().maximize();
+	//Enter URL(bluestone)
+	driver.get("https://www.bluestone.com/");
+	//move to Gold coins
+	Actions act= new Actions(driver);
+	WebElement Gcoins = driver.findElement(By.xpath("//li[@id='goldCoins']"));
+	act.moveToElement(Gcoins);
+	
+	//Go to plain gold coins and Select 20 Gm
+	driver.findElement(By.xpath("//span[.='Plain Gold Coins']"
+			+ "/parent::div[@class='wh-submenu-header']/following-sibling::ul/child::li"
+			+ "/child::span[contains(.,'1 gram')]")).click();
+	//Verify 20Gm Coin is displaying or not.
+
+}
+
+}

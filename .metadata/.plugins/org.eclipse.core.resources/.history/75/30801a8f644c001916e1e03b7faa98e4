@@ -1,0 +1,43 @@
+package Assignment2;
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Flipcart_Com
+{
+	static
+	{
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+	}
+	public static void main(String[] args)
+	{
+		WebDriver driver= new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.get("https://www.flipkart.com/");
+		driver.findElement(By.xpath("//button[@class='_2AkmmA _29YdH8']")).click();
+		WebElement srchBox = driver.findElement(By.className("LM6RPg"));
+		srchBox.sendKeys("C# books");
+		srchBox.sendKeys(Keys.ENTER);
+		List<WebElement> c = driver.findElements(By.xpath("//div[@class='_3liAhj _1R0K0g']/child::a[@class='Zhf2z-']"
+				+ "/following-sibling::a[@class='_2cLu-l' and contains(text(),' C# ')]"));
+		for (int i = 0; i < c.size(); i++) 
+		{
+			String text1 = c.get(i).getText();
+			System.out.println();
+		}
+		
+		driver.findElement(By.xpath("//div[@class='_3liAhj _1R0K0g']/child::a[@class='Zhf2z-']/following-sibling::a[@class='_2cLu-l' and contains(text(),' C# ')]"
+				+ "/parent::div[@class='_3liAhj _1R0K0g']/descendant::div[@class='hGSR34' and contains(text(),'4.7')]"));
+		driver.findElement(By.xpath("//div[@class='_3liAhj _1R0K0g']/child::a[@class='Zhf2z-']/following-sibling::a[@class='_2cLu-l' and contains(text(),' C# ')]"
+				+ "/parent::div[@class='_3liAhj _1R0K0g']/descendant::div[@class='hGSR34' and contains(text(),'4.7')]"
+				+ "/parent::span/parent::div/following-sibling::a/child::div/child::div[@class='_1vC4OE' and contains(text(),'308')]"));
+	}
+
+}

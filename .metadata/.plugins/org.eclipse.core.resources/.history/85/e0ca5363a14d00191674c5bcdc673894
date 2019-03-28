@@ -1,0 +1,19 @@
+package OopsConcept;
+class Developer extends Emp 
+{
+	private String Designation = " Developer "; 
+
+	String getDesignation()
+	{
+		return Designation ; 
+	}
+
+	Developer()
+	{
+	}
+
+	Developer ( String name , double salary , String Designation   )
+	{
+		super(name , salary) ; 
+	}
+}
