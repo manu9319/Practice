@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
-public class Scenario1
+public class Scenario1 extends Generic
 {
 	static {
 		
@@ -39,6 +39,8 @@ public static void main(String[] args) throws Exception
 	Thread.sleep(1000);
 	 WebElement coin20g = driver.findElement(By.xpath("//img[@alt='20 gram 24 KT Gold Coin']"));
      Assert.assertTrue(coin20g.isDisplayed(), "20Gm coin is not displayed ");
+     //take screenshots
+     getPhoto(driver, "C:\\Users\\MANISH SUKLA\\Desktop\\WS\\Assignments\\photo\\"+"Scenario1.png");
      
 
 }

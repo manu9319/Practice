@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Scenario9 
+public class Scenario9 extends Generic 
 {
 	static {
 		
@@ -31,7 +31,10 @@ public static void main(String[] args) throws Exception
 	//go to gold purity
 	
 	//get count of 22k
+	 //take screenshots
+    getPhoto(driver, "C:\\Users\\MANISH SUKLA\\Desktop\\WS\\Assignments\\photo\\"+"Scenario9.png");
 	//close browser
+    driver.close();
 
 
 }

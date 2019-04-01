@@ -12,8 +12,7 @@ public class TestA extends BaseTest
 	@Test
 	public void testA1()
 	{
-		Reporter.log("Run testA1",true);
-		Assert.fail();
-		
+		Reporter.log("Run testA1",true);	
+
 	}
 }

@@ -29,6 +29,9 @@ public class ReverseEvenIndexOfAnArray
 			}
 			else
 			{
+				
+				
+				
 				   res[i]=Even_index[k--];	
 			}
 		}

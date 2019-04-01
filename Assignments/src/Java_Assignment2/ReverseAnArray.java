@@ -10,6 +10,7 @@ public class ReverseAnArray
 		for (int i = b.length-1,j=0; i >=0 ; i--)
 		{
 			b[j++]=a[i];
+			
 		}
 		for (int i = 0; i < b.length; i++)
 		{

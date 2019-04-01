@@ -3,29 +3,13 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="script.TestREport">
-        <methods>
-          <include name="writeReport"/>
-          <include name="testA4"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
-        </methods>
-      </class> <!-- script.TestREport -->
       <class name="script.TestB">
         <methods>
-          <include name="testA1"/>
+          <include name="testA3"/>
           <include name="closeApp"/>
           <include name="end"/>
         </methods>
       </class> <!-- script.TestB -->
-      <class name="script.TestA">
-        <methods>
-          <include name="writeReport"/>
-          <include name="testA1"/>
-          <include name="closeApplication"/>
-          <include name="openApplication"/>
-        </methods>
-      </class> <!-- script.TestA -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

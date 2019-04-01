@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class Scenario7
+public class Scenario7 extends Generic 
 {
 	static {
 		
@@ -38,6 +38,8 @@ public static void main(String[] args) throws Exception
 	 WebElement delcount = driver.findElement(By.xpath("//span[@class='items-count' and .='(171)']"));
 	String str = delcount.getText();
 	System.out.println("count = "+str);
+	 //take screenshots
+    getPhoto(driver, "C:\\Users\\MANISH SUKLA\\Desktop\\WS\\Assignments\\photo\\"+"Scenario7.png");
 	 //close browser
 	driver.close();
 }

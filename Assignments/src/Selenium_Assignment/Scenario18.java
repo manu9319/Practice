@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-public class Scenario18
+public class Scenario18 extends Generic 
 {
 	static {
 		
@@ -34,5 +34,7 @@ public static void main(String[] args) throws Exception
 		String aprice = "9,596";
 		Assert.assertEquals(aprice, eprice);
 		System.out.println("Price is correct");
+		 //take screenshots
+	     getPhoto(driver, "C:\\Users\\MANISH SUKLA\\Desktop\\WS\\Assignments\\photo\\"+"Scenario18.png");
 	}
 }

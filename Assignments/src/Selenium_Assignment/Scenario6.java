@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class Scenario6
+public class Scenario6 extends Generic 
 {
 	static {
 		
@@ -40,6 +40,8 @@ public static void main(String[] args) throws Exception
 	List<WebElement> range = driver.findElements(By.xpath("//span[@class='prcs-dlh']/child::span[contains(.,'Rs.')]"));
 	int count = range.size();
 	System.out.println(count);
+	 //take screenshots
+    getPhoto(driver, "C:\\Users\\MANISH SUKLA\\Desktop\\WS\\Assignments\\photo\\"+"Scenario6.png");
 	//close browser
 	driver.close();
 }
