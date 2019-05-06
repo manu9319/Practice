@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-public class Scenario16 
+public class Scenario16 extends Generic
 {
 	static {
 		
@@ -50,6 +50,8 @@ public static void main(String[] args) throws Exception
 		String aTitle = "Gold Mine Payment Option | BlueStone.com";
 		Assert.assertEquals(aTitle, eTitle);
 		System.out.println("Payment page  displayed");
+		 //take screenshots
+	     getPhoto(driver, "C:\\Users\\MANISH SUKLA\\Desktop\\WS\\Assignments\\photo\\"+"Scenario16.png");
 	}
 
 }

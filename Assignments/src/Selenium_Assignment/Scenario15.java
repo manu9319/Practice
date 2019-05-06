@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-public class Scenario15 
+public class Scenario15 extends Generic 
 {
 	static {
 		
@@ -41,6 +41,8 @@ public static void main(String[] args) throws Exception
 	//verify wheather error msg is diaplaying or not in all fields
 	WebElement errmsg = driver.findElement(By.xpath("//li[.='Please enter valid mobile number']"));
 	Assert.assertTrue(errmsg.isDisplayed());
+	 //take screenshots
+    getPhoto(driver, "C:\\Users\\MANISH SUKLA\\Desktop\\WS\\Assignments\\photo\\"+"Scenario15.png");
 	//close browser
 	driver.close();
 	

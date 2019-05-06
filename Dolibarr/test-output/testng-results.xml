@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="5" total="18" passed="10">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
     <line>
-      <![CDATA[Run testA1]]>
-    </line>
-    <line>
       <![CDATA[testA1]]>
     </line>
     <line>
@@ -12,416 +9,72 @@
     </line>
     <line>
       <![CDATA[testA3]]>
-    </line>
-    <line>
-      <![CDATA[testA]]>
-    </line>
-    <line>
-      <![CDATA[testA1]]>
-    </line>
-    <line>
-      <![CDATA[testA2]]>
-    </line>
-    <line>
-      <![CDATA[testA3]]>
-    </line>
-    <line>
-      <![CDATA[testA4]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="359787" started-at="2019-01-15T16:57:52Z" finished-at="2019-01-15T17:03:52Z">
+  <suite name="Suite" duration-ms="122" started-at="2019-04-01T12:24:57Z" finished-at="2019-04-01T12:24:57Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="359787" started-at="2019-01-15T16:57:52Z" finished-at="2019-01-15T17:03:52Z">
-      <class name="script.CheckIssueDate">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.CheckIssueDate@3532ec19]" name="openApplication" is-config="true" duration-ms="32557" started-at="2019-01-15T17:01:56Z" finished-at="2019-01-15T17:02:29Z">
+    <test name="Test" duration-ms="122" started-at="2019-04-01T12:24:57Z" finished-at="2019-04-01T12:24:57Z">
+      <class name="script.TestB">
+        <test-method status="PASS" signature="testA1()[pri:0, instance:script.TestB@13b6d03]" name="testA1" duration-ms="21" started-at="2019-04-01T12:24:57Z" finished-at="2019-04-01T12:24:57Z">
           <reporter-output>
+            <line>
+              <![CDATA[testA1]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testCheckIssueDate()[pri:1, instance:script.CheckIssueDate@3532ec19]" name="testCheckIssueDate" duration-ms="13402" started-at="2019-01-15T17:02:29Z" finished-at="2019-01-15T17:02:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCheckIssueDate -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.CheckIssueDate@3532ec19]" name="closeApplication" is-config="true" duration-ms="195" started-at="2019-01-15T17:02:42Z" finished-at="2019-01-15T17:02:42Z">
+        </test-method> <!-- testA1 -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestB@13b6d03]" name="closeApp" is-config="true" duration-ms="2" started-at="2019-04-01T12:24:57Z" finished-at="2019-04-01T12:24:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCheckIssueDate status=SUCCESS method=CheckIssueDate.testCheckIssueDate()[pri:1, instance:script.CheckIssueDate@3532ec19] output={null}]]]>
+                <![CDATA[[TestResult name=testA1 status=SUCCESS method=TestB.testA1()[pri:0, instance:script.TestB@13b6d03] output=testA1]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="writeReport()[pri:0, instance:script.CheckIssueDate@3532ec19]" name="writeReport" is-config="true" duration-ms="726" started-at="2019-01-15T17:03:52Z" finished-at="2019-01-15T17:03:53Z">
+        </test-method> <!-- closeApp -->
+        <test-method status="PASS" signature="testA2()[pri:0, instance:script.TestB@13b6d03]" name="testA2" duration-ms="4" started-at="2019-04-01T12:24:57Z" finished-at="2019-04-01T12:24:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[testA2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA2 -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestB@13b6d03]" name="closeApp" is-config="true" duration-ms="2" started-at="2019-04-01T12:24:57Z" finished-at="2019-04-01T12:24:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA2 status=SUCCESS method=TestB.testA2()[pri:0, instance:script.TestB@13b6d03] output=testA2]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- writeReport -->
-        <test-method status="PASS" signature="end()[pri:0, instance:script.TestB@59f99ea]" name="end" is-config="true" duration-ms="1" started-at="2019-01-15T17:03:53Z" finished-at="2019-01-15T17:03:53Z">
+        </test-method> <!-- closeApp -->
+        <test-method status="PASS" signature="testA3()[pri:0, instance:script.TestB@13b6d03]" name="testA3" duration-ms="1" started-at="2019-04-01T12:24:57Z" finished-at="2019-04-01T12:24:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[testA3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA3 -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestB@13b6d03]" name="closeApp" is-config="true" duration-ms="0" started-at="2019-04-01T12:24:57Z" finished-at="2019-04-01T12:24:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA3 status=SUCCESS method=TestB.testA3()[pri:0, instance:script.TestB@13b6d03] output=testA3]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method status="PASS" signature="end()[pri:0, instance:script.TestB@13b6d03]" name="end" is-config="true" duration-ms="2" started-at="2019-04-01T12:24:58Z" finished-at="2019-04-01T12:24:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- script.CheckIssueDate -->
-      <class name="script.TestB">
-        <test-method status="FAIL" signature="testA1()[pri:0, instance:script.TestB@59f99ea]" name="testA1" duration-ms="0" started-at="2019-01-15T16:58:37Z" finished-at="2019-01-15T16:58:37Z">
-          <exception class="java.lang.AssertionError">
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
-at org.junit.Assert.fail(Assert.java:86)
-at org.junit.Assert.fail(Assert.java:95)
-at script.TestB.testA1(TestB.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[testA1]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testA1 -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestB@59f99ea]" name="closeApp" is-config="true" duration-ms="15" started-at="2019-01-15T16:58:37Z" finished-at="2019-01-15T16:58:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA1 status=FAILURE method=TestB.testA1()[pri:0, instance:script.TestB@59f99ea] output=testA1]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method status="PASS" signature="testA2()[pri:0, instance:script.TestB@59f99ea]" name="testA2" duration-ms="0" started-at="2019-01-15T16:58:37Z" finished-at="2019-01-15T16:58:37Z">
-          <reporter-output>
-            <line>
-              <![CDATA[testA2]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testA2 -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestB@59f99ea]" name="closeApp" is-config="true" duration-ms="0" started-at="2019-01-15T16:58:37Z" finished-at="2019-01-15T16:58:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA2 status=SUCCESS method=TestB.testA2()[pri:0, instance:script.TestB@59f99ea] output=testA2]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method status="PASS" signature="testA3()[pri:0, instance:script.TestB@59f99ea]" name="testA3" duration-ms="0" started-at="2019-01-15T16:58:37Z" finished-at="2019-01-15T16:58:37Z">
-          <reporter-output>
-            <line>
-              <![CDATA[testA3]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testA3 -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestB@59f99ea]" name="closeApp" is-config="true" duration-ms="1" started-at="2019-01-15T16:58:37Z" finished-at="2019-01-15T16:58:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA3 status=SUCCESS method=TestB.testA3()[pri:0, instance:script.TestB@59f99ea] output=testA3]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
       </class> <!-- script.TestB -->
-      <class name="script.InvalidLogin">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.InvalidLogin@68c4039c]" name="openApplication" is-config="true" duration-ms="32022" started-at="2019-01-15T17:03:19Z" finished-at="2019-01-15T17:03:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testInvalidLogin()[pri:2, instance:script.InvalidLogin@68c4039c]" name="testInvalidLogin" duration-ms="728" started-at="2019-01-15T17:03:51Z" finished-at="2019-01-15T17:03:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.InvalidLogin@68c4039c]" name="closeApplication" is-config="true" duration-ms="151" started-at="2019-01-15T17:03:52Z" finished-at="2019-01-15T17:03:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=InvalidLogin.testInvalidLogin()[pri:2, instance:script.InvalidLogin@68c4039c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- script.InvalidLogin -->
-      <class name="script.TestA">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.TestA@ae45eb6]" name="openApplication" is-config="true" duration-ms="44157" started-at="2019-01-15T16:57:52Z" finished-at="2019-01-15T16:58:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="FAIL" signature="testA1()[pri:0, instance:script.TestA@ae45eb6]" name="testA1" duration-ms="20" started-at="2019-01-15T16:58:36Z" finished-at="2019-01-15T16:58:36Z">
-          <exception class="java.lang.AssertionError">
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
-at org.junit.Assert.fail(Assert.java:86)
-at org.junit.Assert.fail(Assert.java:95)
-at script.TestA.testA1(TestA.java:16)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Run testA1]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testA1 -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.TestA@ae45eb6]" name="closeApplication" is-config="true" duration-ms="967" started-at="2019-01-15T16:58:36Z" finished-at="2019-01-15T16:58:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA1 status=FAILURE method=TestA.testA1()[pri:0, instance:script.TestA@ae45eb6] output=Run testA1]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- script.TestA -->
-      <class name="script.TestREport">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.TestREport@27efef64]" name="openApplication" is-config="true" duration-ms="32398" started-at="2019-01-15T16:58:37Z" finished-at="2019-01-15T16:59:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testA()[pri:0, instance:script.TestREport@27efef64]" name="testA" duration-ms="2" started-at="2019-01-15T16:59:10Z" finished-at="2019-01-15T16:59:10Z">
-          <reporter-output>
-            <line>
-              <![CDATA[testA]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.TestREport@27efef64]" name="closeApplication" is-config="true" duration-ms="103" started-at="2019-01-15T16:59:10Z" finished-at="2019-01-15T16:59:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA status=SUCCESS method=TestREport.testA()[pri:0, instance:script.TestREport@27efef64] output=testA]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.TestREport@27efef64]" name="openApplication" is-config="true" duration-ms="32349" started-at="2019-01-15T16:59:10Z" finished-at="2019-01-15T16:59:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testA1()[pri:0, instance:script.TestREport@27efef64]" name="testA1" duration-ms="2" started-at="2019-01-15T16:59:42Z" finished-at="2019-01-15T16:59:42Z">
-          <reporter-output>
-            <line>
-              <![CDATA[testA1]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testA1 -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.TestREport@27efef64]" name="closeApplication" is-config="true" duration-ms="329" started-at="2019-01-15T16:59:42Z" finished-at="2019-01-15T16:59:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA1 status=SUCCESS method=TestREport.testA1()[pri:0, instance:script.TestREport@27efef64] output=testA1]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.TestREport@27efef64]" name="openApplication" is-config="true" duration-ms="32320" started-at="2019-01-15T16:59:42Z" finished-at="2019-01-15T17:00:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testA2()[pri:0, instance:script.TestREport@27efef64]" name="testA2" duration-ms="2" started-at="2019-01-15T17:00:15Z" finished-at="2019-01-15T17:00:15Z">
-          <reporter-output>
-            <line>
-              <![CDATA[testA2]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testA2 -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.TestREport@27efef64]" name="closeApplication" is-config="true" duration-ms="363" started-at="2019-01-15T17:00:15Z" finished-at="2019-01-15T17:00:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA2 status=SUCCESS method=TestREport.testA2()[pri:0, instance:script.TestREport@27efef64] output=testA2]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.TestREport@27efef64]" name="openApplication" is-config="true" duration-ms="32760" started-at="2019-01-15T17:00:15Z" finished-at="2019-01-15T17:00:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testA3()[pri:0, instance:script.TestREport@27efef64]" name="testA3" duration-ms="1" started-at="2019-01-15T17:00:48Z" finished-at="2019-01-15T17:00:48Z">
-          <reporter-output>
-            <line>
-              <![CDATA[testA3]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testA3 -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.TestREport@27efef64]" name="closeApplication" is-config="true" duration-ms="322" started-at="2019-01-15T17:00:48Z" finished-at="2019-01-15T17:00:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA3 status=SUCCESS method=TestREport.testA3()[pri:0, instance:script.TestREport@27efef64] output=testA3]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.TestREport@27efef64]" name="openApplication" is-config="true" duration-ms="32236" started-at="2019-01-15T17:00:48Z" finished-at="2019-01-15T17:01:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="FAIL" signature="testA4()[pri:0, instance:script.TestREport@27efef64]" name="testA4" duration-ms="5" started-at="2019-01-15T17:01:20Z" finished-at="2019-01-15T17:01:20Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.fail(Assert.java:103)
-at script.TestREport.testA4(TestREport.java:43)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[testA4]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testA4 -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.TestREport@27efef64]" name="closeApplication" is-config="true" duration-ms="603" started-at="2019-01-15T17:01:20Z" finished-at="2019-01-15T17:01:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA4 status=FAILURE method=TestREport.testA4()[pri:0, instance:script.TestREport@27efef64] output=testA4]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- script.TestREport -->
-      <class name="script.TestUtil">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.TestUtil@6f7fd0e6]" name="openApplication" is-config="true" duration-ms="32353" started-at="2019-01-15T17:01:21Z" finished-at="2019-01-15T17:01:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testA()[pri:0, instance:script.TestUtil@6f7fd0e6]" name="testA" duration-ms="2560" started-at="2019-01-15T17:01:53Z" finished-at="2019-01-15T17:01:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.TestUtil@6f7fd0e6]" name="closeApplication" is-config="true" duration-ms="142" started-at="2019-01-15T17:01:56Z" finished-at="2019-01-15T17:01:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testA status=SUCCESS method=TestUtil.testA()[pri:0, instance:script.TestUtil@6f7fd0e6] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- script.TestUtil -->
-      <class name="script.ValidLogin">
-        <test-method status="PASS" signature="openApplication()[pri:0, instance:script.ValidLogin@47c62251]" name="openApplication" is-config="true" duration-ms="32256" started-at="2019-01-15T17:02:42Z" finished-at="2019-01-15T17:03:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method status="PASS" signature="testValidLOgin()[pri:1, instance:script.ValidLogin@47c62251]" name="testValidLOgin" duration-ms="2073" started-at="2019-01-15T17:03:15Z" finished-at="2019-01-15T17:03:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testValidLOgin -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@47c62251]" name="closeApplication" is-config="true" duration-ms="2204" started-at="2019-01-15T17:03:17Z" finished-at="2019-01-15T17:03:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testValidLOgin status=SUCCESS method=ValidLogin.testValidLOgin()[pri:1, instance:script.ValidLogin@47c62251] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- script.ValidLogin -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

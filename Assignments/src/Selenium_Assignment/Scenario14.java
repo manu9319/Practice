@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-public class Scenario14
+public class Scenario14 extends Generic 
 {
 	static {
 		
@@ -42,6 +42,8 @@ public static void main(String[] args) throws Exception
 	Assert.assertTrue(verifyemail.isDisplayed(), "email is not displayed");
 	WebElement verifyamt = driver.findElement(By.xpath("//span[@name='subscriptionAmount']"));
 	Assert.assertTrue(verifyamt.isDisplayed(), "amount is not displayed");
+	 //take screenshots
+    getPhoto(driver, "C:\\Users\\MANISH SUKLA\\Desktop\\WS\\Assignments\\photo\\"+"Scenario14.png");
 	//close browser
 	driver.close();
 	 

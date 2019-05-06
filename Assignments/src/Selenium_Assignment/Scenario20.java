@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Scenario20 
+public class Scenario20 extends Generic 
 {
 	static {
 		
@@ -34,6 +34,8 @@ public static void main(String[] args) throws Exception
 		{
 			we.sendKeys(Keys.ARROW_LEFT);
 		}
+		 //take screenshots
+	     getPhoto(driver, "C:\\Users\\MANISH SUKLA\\Desktop\\WS\\Assignments\\photo\\"+"Scenario20.png");
 		//close Browser
 		driver.close();
 	}

@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-public class Scenario17 
+public class Scenario17 extends Generic 
 {
 	static {
 		
@@ -33,6 +33,8 @@ public static void main(String[] args) throws Exception
 		int aCount = 6;
 		Assert.assertEquals(aCount, eCount);
 		System.out.println("Store count correct ");
+		 //take screenshots
+	     getPhoto(driver, "C:\\Users\\MANISH SUKLA\\Desktop\\WS\\Assignments\\photo\\"+"Scenario17.png");
 		//close browser
 		driver.close();
 	}

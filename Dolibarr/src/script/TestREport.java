@@ -40,6 +40,5 @@ Reporter.log("testA3",true);
 public void testA4()
 {
 Reporter.log("testA4",true);
-Assert.fail();
 }
 }

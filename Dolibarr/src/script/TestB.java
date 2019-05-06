@@ -36,7 +36,6 @@ public class TestB
 	public void testA1()
 	{
 		Reporter.log("testA1",true);
-		Assert.fail();
 		
 	}
 	
@@ -51,6 +50,7 @@ public class TestB
 	public void testA3()
 	{
 		Reporter.log("testA3",true);
+	
 		
 	}
 
