@@ -12,6 +12,7 @@ public class ReadData {
 			ObjectInputStream obin=new ObjectInputStream(fin);
 			Object ob = obin.readObject();
             System.out.println(ob);
+            obin.close();
 	}
 
 }
